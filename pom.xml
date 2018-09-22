@@ -494,14 +494,14 @@
 
 	 <distributionManagement>
     <repository>
-      <id>spring-releases</id>
-      <name>spring-releases</name>
-      <url>http://nexus.example.com:8081/nexus/content/repositories/spring-releases/</url>
+      <id>releases</id>
+      <name>releases</name>
+      <url>http://ec2-18-212-219-184.compute-1.amazonaws.com:8081/nexus/repositories/releases/</url>
     </repository>
     <snapshotRepository>
-      <id>spring-snapshots</id>
-      <name>spring-snapshots</name>
-      <url>http://nexus.example.com:8081/nexus/content/repositories/spring-snapshots/</url>
+      <id>snapshots</id>
+      <name>snapshots</name>
+      <url>http://ec2-18-212-219-184.compute-1.amazonaws.com:8081/nexus/repositories/snapshots/</url>
     </snapshotRepository>
 </distributionManagement>
 	
