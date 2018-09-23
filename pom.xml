@@ -171,7 +171,11 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+			<packagingExcludes>
+            **/tools.jar
+          </packagingExcludes>
                 </configuration>
+		    
             </plugin>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
@@ -194,7 +198,11 @@
 					<excludes>
 						<exclude>**/*Abstract*Test.java</exclude>
 					</excludes>
+					<packagingExcludes>
+            **/tools.jar
+          </packagingExcludes>
 				</configuration>
+						
 			</plugin>
 
         </plugins>
@@ -342,7 +350,11 @@
                                     <configuration>
                                         <effort>Max</effort>
                                         <xmlOutput>true</xmlOutput>
+					    <packagingExcludes>
+            **/tools.jar
+          </packagingExcludes>
                                     </configuration>
+					
                                 </plugin>
                                 <plugin>
                                     <artifactId>maven-javadoc-plugin</artifactId>
@@ -437,7 +449,11 @@
                                 <format>html</format>
                                 <format>xml</format>
                             </formats>
+				<packagingExcludes>
+            **/tools.jar
+          </packagingExcludes>
                         </configuration>
+			    
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
